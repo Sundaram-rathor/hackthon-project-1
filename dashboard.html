@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dashboard.css" >
+</head>
+<body>
+    <div class="head">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2 " id="sidebar">
+                    <div class="row text-center my-1 " id="user"><h3>Hi, Username</h3></div>
+                    <div class="row float-left my-3" id="Societies" ><h6><a href="#" onclick="callSociety();">Societies</a></h6></div>
+                    <div class="row float-left my-3" id="Event"><h6><a href="#" onclick="callEvent();">Events</a></h6></div>
+                    <div class="row float-left my-3" id="Apply"><h6><a href="#" onclick="callApply();">Apply</a></h6></div>
+                    <div class="row float-left my-3" id="About"><h6><a href="#" onclick="callAbout();">About</a></h6></div>
+                    <div class="row float-left my-3" id="Contact"><h6><a href="#" onclick="callContact();">Contact Us</a></h6></div>
+                </div>
+<!--ABOUT SECTION       -->
+                <div class="col-10" id="content">
+                    <div class="row text-center shadow p-3 mb-5 bg-body rounded" id="headingdiv">
+                        <div id="contentheading"><h1 >Welcome NSUTian</h1></div>
+                    </div>
+                    <div class="row shadow-sm p-3 mb-5 bg-body rounded"><h5>This is a Web app on which you can track all the soceities of NSUT. Here you can Apply , Moniter and keep track of different Societies.</h5></div>
+                    <div class="shadow-sm p-3 mb-5 bg-body rounded"><h5>Developers:</h5></div>
+                    <div class="row">
+                        <div class="col-6 shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="row text-center "><h6>image</h6></div>
+                            <div class="row text-center"><h5>Sundaram</h5></div>
+                        </div>
+                        <div class="col-6 shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="row text-center"><h6>image</h6></div>
+                            <div class="row text-center"><h5>Harsh</h5></div>
+                        </div>
+                    </div>
+                    <div class="row " id="copyright">5</div>
+                </div>
+<!--SOCIETIES CONTENT-->
+                <div class="col-10" id="societies">
+                    <div class="row text-center shadow p-3 mb-5 bg-body rounded" id="headingdiv">
+                        <div id="contentheading"><h1 >ALL SOCIETIES</h1></div>
+                    </div>
+                    <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                        <div class="col-1" id="society1"><img src="./devcom.png" alt="devcom" class="img-thumbnail"></div>
+                        <div class="col-2 text-center"><h5>Devcomm</h5></div>
+                        <div class="col-2 text-center"><h5>Coding Society</h5></div>
+                        <div class="col-4 text-center">
+                            <div class="row">
+                                <div class="col-4"><i class="fa fa-instagram" style="font-size:36px"></i></div>
+                                <div class="col-4"><i class="fa fa-linkedin-square" style="font-size:36px"></i></div>
+                                <div class="col-4"><i class="fa fa-share-square-o" style="font-size:36px"></i></div>
+                            </div>
+                        </div>
+                        <div class="col-2 text-center"><h5>Registration <b>closed</b></h5></div>
+                    </div>
+                    <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                        <div class="col-1"><img src="./debsoc.png" alt="debsoc" class="img-thumbnail"></div>
+                        <div class="col-2 text-center"><h5>Debsoc</h5></div>
+                        <div class="col-2 text-center"><h5>Debating Society</h5></div>
+                        <div class="col-4 text-center">
+                            <div class="row">
+                                <div class="col-4"><i class="fa fa-instagram" style="font-size:36px"></i></div>
+                                <div class="col-4"><i class="fa fa-linkedin-square" style="font-size:36px"></i></div>
+                                <div class="col-4"><i class="fa fa-share-square-o" style="font-size:36px"></i></div>
+                            </div>
+                        </div>
+                        <div class="col-2 text-center"><h5>Registration <b>closed</b></h5></div>
+                    </div>
+                    <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                        <div class="col-1"><img src="./ashva.png" alt="debsoc" class="img-thumbnail"></div>
+                        <div class="col-2 text-center"><h5>Ashvamedh</h5></div>
+                        <div class="col-2 text-center"><h5>Drama Society</h5></div>
+                        <div class="col-4 ">
+                            <div class="row text-center">
+                                <div class="col-4"><i class="fa fa-instagram" style="font-size:36px"></i></div>
+                                <div class="col-4"><i class="fa fa-linkedin-square" style="font-size:36px"></i></div>
+                                <div class="col-4"><i class="fa fa-share-square-o" style="font-size:36px"></i></div>
+                            </div>
+                        </div>
+                        <div class="col-2 text-center"><h5>Registration <b>closed</b></h5></div>
+                    </div>
+                    <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                        <div class="col-1">image</div>
+                        <div class="col-2">Society Name</div>
+                        <div class="col-2">Events</div>
+                        <div class="col-4">Links</div>
+                        <div class="col-2">Registration</div>
+                    </div>
+                    <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                        <div class="col-1">image</div>
+                        <div class="col-2">Society Name</div>
+                        <div class="col-2">Events</div>
+                        <div class="col-4">Links</div>
+                        <div class="col-2">Registration</div>
+                    </div>
+                    <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                        <div class="col-1">image</div>
+                        <div class="col-2">Society Name</div>
+                        <div class="col-2">Events</div>
+                        <div class="col-4">Links</div>
+                        <div class="col-2">Registration</div>
+                    </div>
+                    <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                        <div class="col-1">image</div>
+                        <div class="col-2">Society Name</div>
+                        <div class="col-2">Events</div>
+                        <div class="col-4">Links</div>
+                        <div class="col-2">Registration</div>
+                    </div>
+                    <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                        <div class="col-1">image</div>
+                        <div class="col-2">Society Name</div>
+                        <div class="col-2">Events</div>
+                        <div class="col-4">Links</div>
+                        <div class="col-2">Registration</div>
+                    </div>
+                    <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                        <div class="col-1">image</div>
+                        <div class="col-2">Society Name</div>
+                        <div class="col-2">Events</div>
+                        <div class="col-4">Links</div>
+                        <div class="col-2">Registration</div>
+                    </div>
+                    <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                        <div class="col-1">image</div>
+                        <div class="col-2">Society Name</div>
+                        <div class="col-2">Events</div>
+                        <div class="col-4">Links</div>
+                        <div class="col-2">Registration</div>
+                    </div>
+                    <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                        <div class="col-1">image</div>
+                        <div class="col-2">Society Name</div>
+                        <div class="col-2">Events</div>
+                        <div class="col-4">Links</div>
+                        <div class="col-2">Registration</div>
+                    </div>
+                    <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                        <div class="col-1">image</div>
+                        <div class="col-2">Society Name</div>
+                        <div class="col-2">Events</div>
+                        <div class="col-4">Links</div>
+                        <div class="col-2">Registration</div>
+                    </div>
+                    
+                    
+                </div>
+<!--EVENTS CONTENT  -->
+                    <div class="col-10" id="Events">
+                        <div class="row text-center shadow p-3 mb-5 bg-body rounded" id="headingdiv">
+                            <div id="contentheading"><h1 >ALL EVENTS</h1></div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1"><img src="./moksha.png" alt="moksha" class="img-thumbnail"></div>
+                            <div class="col-2 text-center"><h5>Moksha Innovision</h5></div>
+                            <div class="col-2 text-center"><h5>College Fest</h5></div>
+                            <div class="col-4 text-center">
+                                <div class="row">
+                                    <div class="col-4"><i class="fa fa-instagram" style="font-size:36px"></i></div>
+                                    <div class="col-4"><i class="fa fa-linkedin-square" style="font-size:36px"></i></div>
+                                    <div class="col-4"><i class="fa fa-share-square-o" style="font-size:36px"></i></div>
+                                </div>
+                            </div>
+                            <div class="col-2 text-center"><h5>Registration <b>Open</b></h5></div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1"><img src="./innovatensut.png" alt="innovatensut" class="img-thumbnail"></div>
+                            <div class="col-2 text-center"><h5>Devcomm</h5></div>
+                            <div class="col-2 text-center"><h5>Hackthon</h5></div>
+                            <div class="col-4 text-center"><h5>
+                                <div class="row">
+                                    <div class="col-4"><i class="fa fa-instagram" style="font-size:36px"></i></div>
+                                    <div class="col-4"><i class="fa fa-linkedin-square" style="font-size:36px"></i></div>
+                                    <div class="col-4"><i class="fa fa-share-square-o" style="font-size:36px"></i></div>
+                                </div>
+                            </h5></div>
+                            <div class="col-2 text-center"><h5>Registration <b>Open</b></h5></h5></div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">event image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            <div class="col-4">Links</div>
+                            <div class="col-2">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">event image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            <div class="col-4">Links</div>
+                            <div class="col-2">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">event image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            <div class="col-4">Links</div>
+                            <div class="col-2">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">event image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            <div class="col-4">Links</div>
+                            <div class="col-2">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">event image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            <div class="col-4">Links</div>
+                            <div class="col-2">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">event image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            <div class="col-4">Links</div>
+                            <div class="col-2">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">event image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            <div class="col-4">Links</div>
+                            <div class="col-2">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">event image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            <div class="col-4">Links</div>
+                            <div class="col-2">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">event image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            <div class="col-4">Links</div>
+                            <div class="col-2">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">event image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            <div class="col-4">Links</div>
+                            <div class="col-2">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">event image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            <div class="col-4">Links</div>
+                            <div class="col-2">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">event image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            <div class="col-4">Links</div>
+                            <div class="col-2">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">event image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            <div class="col-4">Links</div>
+                            <div class="col-2">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">event image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            <div class="col-4">Links</div>
+                            <div class="col-2">Registration</div>
+                        </div>
+                        
+                        
+                    </div>
+<!--APPLY IN SOCIETIES-->
+                    <div class="col-10" id="apply">
+                        <div class="row text-center shadow p-3 mb-5 bg-body rounded" id="headingdiv">
+                            <div id="contentheading"><h1 >APPLY HERE :</h1></div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            
+                            <div class="col-2 offset-10">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            
+                            <div class="col-2 offset-10">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            
+                            <div class="col-2 offset-10">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            
+                            <div class="col-2 offset-10">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            
+                            <div class="col-2 offset-10">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            
+                            <div class="col-2 offset-10">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            
+                            <div class="col-2 offset-10">Registration</div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-1">image</div>
+                            <div class="col-2">Society Name</div>
+                            <div class="col-2">discription</div>
+                            
+                            <div class="col-2 offset-10">Registration</div>
+                        </div>
+                    </div>
+<!--CONTACT US -->
+                    <div class="col-10" id="contactus">
+                        <div class="row text-center shadow p-3 mb-5 bg-body rounded" id="headingdiv">
+                            <div id="contentheading"><h1 >CONTACT US </h1></div>
+                        </div>
+                        <div class="row shadow-sm p-3 mb-5 bg-body rounded">
+                            <div class="col-12">Phone no. : 00000000000</div>
+                            <div class="col-12">E Mail : xyz@gmail.com</div>
+                            <div class="col-12">Post : 1100323</div>
+                            
+                            <div class="col-12 ">Social Links :</div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

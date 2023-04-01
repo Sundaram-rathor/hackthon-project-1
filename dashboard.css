@@ -1,0 +1,46 @@
+#sidebar{
+    background: #2d3436;
+    color:antiquewhite;
+    height: 2000px;
+}
+#content{
+    display: none;
+    background: rgba(255, 255, 255, 0.7);
+    height: 750px;
+}
+
+#sidebar a{
+    text-decoration: none;
+    color: antiquewhite;
+    
+}
+#headingdiv{
+    height: 200px;
+    
+    
+}
+#contentheading{
+
+    position: relative;
+    margin-top: 125px;
+}
+#user{
+    height: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+#societies{
+    display: block;
+}
+#Events{
+    display: none;
+}
+#apply{
+    display: none;
+}
+#contactus{
+    display: none;
+}
+/*for devcomm*/
+
+
